@@ -1,0 +1,14 @@
+<section>
+  <article *ngFor="let e of etuServ.etudiant; let i=index">
+    <a *ngIf="i > -1" href [routerLink]="['/etudiant',i]">
+      <h3 *ngIf="i > -1">{{e.prenom}} {{e.nom}}</h3>
+      <img *ngIf="i > -1" [src]=e.image />
+    </a><br/>
+    <h4 *ngIf="i > -1">Company: {{e.company}}</h4>
+    <h4 *ngIf="i > -1">Localisation: {{e.localisation}}</h4>
+    <h4 *ngIf="i > -1">Email: {{e.email}}</h4>
+    <h4 *ngIf="i > -1">Option: {{e.option}}</h4>
+    <h4 *ngIf="i > -1">Salaire: {{e.salaire}}</h4>
+    <a href [routerLink]="['/edition',i]"><button *ngIf="i > -1">Éditer étudiant</button></a>
+  </article>
+</section>

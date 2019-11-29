@@ -1,0 +1,13 @@
+<section>
+  <article *ngIf="etuServ.etudiant[0]">
+      <h3>{{etuServ.etudiant[0].prenom}} {{etuServ.etudiant[0].nom}}</h3>
+      <img [src]=etuServ.etudiant[0].image />
+     <br/>
+    <h4>Company: {{etuServ.etudiant[0].company}}</h4>
+    <h4>Localisation: {{etuServ.etudiant[0].localisation}}</h4>
+    <h4>Email: {{etuServ.etudiant[0].email}}</h4>
+    <h4>Option: {{etuServ.etudiant[0].option}}</h4>
+    <h4>Salaire: {{etuServ.etudiant[0].salaire}}</h4>
+    <a href [routerLink]="['/edition',0]"><button>Modifier mon profil</button></a>
+  </article>
+</section>

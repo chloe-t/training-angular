@@ -1,0 +1,57 @@
+[{
+    "prenom": "Toto",
+    "nom": "De la Vega",
+    "image": "https://picsum.photos/199",
+    "company": "Google Inc.",
+    "localisation": "Lyon",
+    "email": "toto.vega@google.com",
+    "option":"IA",
+    "salaire": 36500
+  },
+  {
+    "prenom": "Alexandre",
+    "nom": "Tournier",
+    "image": "https://picsum.photos/200",
+    "company": "Amazon Spain",
+    "localisation": "abroad",
+    "email": "alexandre@amazon.fr",
+    "option":"ICC",
+    "salaire":49000
+  }, {
+    "prenom": "Obé",
+    "nom": "Lix",
+    "image": "https://picsum.photos/201",
+    "company": "Facebook",
+    "localisation": "Toulouse",
+    "email": "obe@facebook.com",
+    "option":"IMSI",
+    "salaire": 34000
+  }, {
+    "prenom": "Hello",
+    "nom": "World",
+    "image": "https://picsum.photos/202",
+    "company": "Oracle",
+    "localisation": "abroad",
+    "email": "Hello@oracle.com",
+    "option":"ICC",
+    "salaire":41000
+  }, {
+    "prenom": "Toto",
+    "nom": "Truc",
+    "image": "https://picsum.photos/203",
+    "company": "SAP France",
+    "localisation": "Paris",
+    "email": "toto@sap.fr",
+    "option":"ICC",
+    "salaire":35000
+  }, {
+    "prenom": "Soleil",
+    "nom": "Brillant",
+    "image": "https://picsum.photos/204",
+    "company": "Meteo France",
+    "localisation": "Toulouse",
+    "email":"soleil@meteo.fr",
+    "option":"ICC",
+    "salaire":74000
+  }
+]

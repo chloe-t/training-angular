@@ -1,0 +1,16 @@
+<article>
+  <p>J'autorise l'utilisation, l'affichage et le stockage des données suivantes:</p>
+  <br />
+
+  <form (submit)="changeChoice()" >
+    <input (change)="FieldsChange($event)" value="localisation" name="localisation" type="checkbox" checked [(ngModel)]="localisation"/> Localisation
+    <input (change)="FieldsChange($event)" value="email" name="email" type="checkbox" checked checked [(ngModel)]="email" /> Email
+    <input (change)="FieldsChange($event)" value="entreprise" name="entreprise" type="checkbox" checked checked [(ngModel)]="entreprise"/> Entreprise
+    <input (change)="FieldsChange($event)" value="option" name="option" type="checkbox" checked checked [(ngModel)]="option" /> Option
+    <input (change)="FieldsChange($event)" value="salaire" name="salaire" type="checkbox" checked checked [(ngModel)]="salaire"/> Salaire
+    <br />
+    <br />
+    <button (clic)="changeChoice()">Enregistrer</button>
+    <div class="one" [innerHtml]="htmlToAdd"></div>
+  </form>
+</article>

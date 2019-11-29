@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <li *ngIf="conne.role!='user' && conne.role!='' "><a href routerLink='/liste'>Liste anciens</a></li>
+    <li *ngIf="!conne.connecte"><a href routerLink='/connexion'>Connexion</a></li>
+    <!-- <li *ngIf="conne.connecte"><a href routerLink='/edition'>Edition</a></li> -->
+    <li *ngIf="conne.connecte"><a href routerLink='/rgpd'>RGPD</a></li>
+    <li *ngIf="conne.connecte"><a href routerLink='/stat'>Statistiques</a></li>
+    <li *ngIf="conne.role=='user'"><a href routerLink='/choix'>Droits</a></li>
+    <li *ngIf="conne.role=='user'"><a href routerLink='/profil'>Mon profil</a></li>
+    <!-- <li *ngIf="conne.role=='admin'"><a href routerLink='/choix'>TOTOOOOOOOO</a></li> -->
+  </ul>
+  <a href routerLink=''><button *ngIf="conne.connecte" (click)="disconnect()">Déconnexion</button></a>
+</nav>

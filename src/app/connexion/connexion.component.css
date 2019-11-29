@@ -1,0 +1,28 @@
+form{
+    display:flex;
+    margin: auto;
+    flex-flow: column wrap;
+    width: 15%;
+}
+
+div{
+    display:flex;
+    margin: auto;
+    flex-flow: column wrap;
+    width: 15%;
+}
+
+
+input[type="submit"]
+
+.ng-untouched{
+    border: solid 1px pink;
+}
+
+.ng-pristine{
+    border: solid 1px grey
+} 
+
+.ng-invalid{
+    border: solid 1px red
+}

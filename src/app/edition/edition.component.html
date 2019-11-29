@@ -1,0 +1,25 @@
+<section>
+  <article>
+    <form #f="ngForm" *ngIf="machin > -1 && etuServ.etudiant[machin]" (ngSubmit)="saveChanges(machin)">
+      <img [src]=etuServ.etudiant[machin].image /><br/>
+      <input [(ngModel)]="prenom" name="prenom" type="text" [placeholder]=etuServ.etudiant[machin].prenom>
+      <input [(ngModel)]="nom" name="nom" type="text" [placeholder]=etuServ.etudiant[machin].nom > <br/>
+      <input [(ngModel)]="entreprise" name="company" type="text" [placeholder]=etuServ.etudiant[machin].company > <br/>
+      <input [(ngModel)]="localisation" name="localisation" type="text" [placeholder]=etuServ.etudiant[machin].localisation ><br/>
+      <input [(ngModel)]="email" name="email" type="text" [placeholder]=etuServ.etudiant[machin].email ><br/>
+      <input [(ngModel)]="option" name="option" type="text" [placeholder]=etuServ.etudiant[machin].option ><br/>
+      <input [(ngModel)]="salaire" name="salaire" type="text" [placeholder]=etuServ.etudiant[machin].salaire ><br/>
+      <br/>
+      <br/>
+      <br/>
+      <button class="button" (click)="saveChanges(machin,$event)" type="submit">Enregistrer</button>
+
+      <a href [routerLink]="['/liste']"><button *ngIf="conne.role == 'admin'" (click)="deleteStudent(etuServ.etudiant[machin])">Supprimer l'étudiant</button></a>
+      <a href [routerLink]="['/liste']"><button *ngIf="conne.role != 'user'">Retour a la liste</button></a>
+      <div [innerHtml]="htmlToAdd"></div>
+    </form>
+   
+    
+   
+  </article>
+</section>

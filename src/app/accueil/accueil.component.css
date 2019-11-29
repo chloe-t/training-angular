@@ -1,0 +1,17 @@
+article{
+   background-color: aliceblue;
+   padding: 1%;
+   margin: 1%;
+   font-family: 'Montserrat', sans-serif;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;  
+    width: 90%;  
+}
+a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}

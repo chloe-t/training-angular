@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+ul {
+  list-style-type: none;
+  margin: auto;
+  width: 80vw;
+}
+li {
+    display: inline;
+    flex-flow: row wrap;
+    justify-content: space space-between !important;   
+    margin: 5vw;
+
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

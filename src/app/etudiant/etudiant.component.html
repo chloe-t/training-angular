@@ -1,0 +1,10 @@
+<section>      
+  <article *ngIf="machin > -1" >
+    <h3>{{etuServ.etudiant[machin].prenom}} {{etuServ.etudiant[machin].nom}}</h3>
+    <img [src]=etuServ.etudiant[machin].image />
+  </article>
+  <article *ngIf="!(machin > -1)" id="vide">
+        <iframe src="http://giphygifs.s3.amazonaws.com/media/12XMGIWtrHBl5e/giphy.gif" width="480" height="392" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p>CHOISIS UN ETUDIANT, JE PEUX PAS DEVINER LEQUEL TU VEUX</p>
+</article>
+</section>

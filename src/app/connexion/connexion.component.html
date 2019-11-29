@@ -1,0 +1,16 @@
+<section>
+    <!-- #fi -> variable locale de type ngForm -->
+  <form #fi="ngForm" (submit)="authentification()" *ngIf="!conne.connecte">
+      <!-- ngModel -> crochet : injecter la data ; parenthèses : renvoyer la data et les méthodes liées aux composants -->
+    <input name="id" #id="ngModel" [(ngModel)]="identification.id" type="text" (input)="desTrucs()" required minlength="4" placeholder="Identifiant">
+    <span *ngIf="id.invalid"> Merci d'attribuer au moins 4 caractères</span>
+    <!-- <span *ngIf="isConnected()"> Merci d'attribuer au moins 8 caractères</span> -->
+    <input name="pwd" [(ngModel)]="identification.pwd" type="password" (change)="desTrucs()" placeholder="Mot de passe">
+    
+    <input name="envoie" [disabled]="fi.control.invalid" type="submit" value="Envoyer">
+    <input name="annuler" type="reset">
+  </form>
+  <br/>
+  <p *ngIf="conne.connecte" style="text-align: center;">Bienvenue {{identification.id}} </p>
+  <br/>
+</section>
