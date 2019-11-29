@@ -17,8 +17,15 @@ export class ConnexionComponent implements OnInit {
 
   ngOnInit() {
     this.identification = {
-      id: '',
-      pwd: ''
+      id:'',
+      pwd: '',
+      email: '',
+      nom: '',
+      prenom: '',
+      company: '',
+      salaire: -1 ,
+      option: '',
+      localisation: '' 
     }
   }
 
